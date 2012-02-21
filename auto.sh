@@ -12,6 +12,7 @@ ifconfig eth3 0.0.0.0 up
 ifup bond0
 
 echo "$1" > /etc/hostname
+cat hosts > /etc/hosts
 
 echo "auto bond0.4051" >> /etc/network/interfaces
 echo "iface bond0.4051 inet static" >> /etc/network/interfaces
